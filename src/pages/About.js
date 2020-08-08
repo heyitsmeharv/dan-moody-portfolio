@@ -8,13 +8,13 @@ const Container = styled.div`
 
 `;
 
-const Home = () => {
+const About = () => {
   return (
     <Container>
       <Header/>
-      <div>This is the home page</div>
+      About
     </Container>
   );
 }
 
-export default Home;
+export default About;

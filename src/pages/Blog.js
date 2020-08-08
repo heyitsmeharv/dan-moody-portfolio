@@ -8,13 +8,13 @@ const Container = styled.div`
 
 `;
 
-const Home = () => {
+const Blog = () => {
   return (
     <Container>
       <Header/>
-      <div>This is the home page</div>
+      Blog
     </Container>
   );
 }
 
-export default Home;
+export default Blog;

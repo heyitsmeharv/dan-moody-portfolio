@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 // icons
-import { StyledFacebookCircle, StyledLinkedinSquare, StyledTwitter, StyledGithub  } from '../resources/Icons';
+import { StyledFacebookCircle, StyledLinkedinSquare, StyledTwitter, StyledGithub  } from '../../resources/Icons';
 
 
 const Wrapper = styled.div`
   display: flex;
-  margin-left: auto;
 `;
 
 const StyledButton = styled(motion.button)`
@@ -31,9 +30,9 @@ const socialMediaButtons = [
 const SocialMediaBar = () => {
   return (
     <Wrapper>
-      {socialMediaButtons.map(button => {
+      {socialMediaButtons.map((button, key) => {
         return (
-        <StyledButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} >
+        <StyledButton key={key} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           {button}
         </StyledButton>
         )

@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // pages
 import Home from './pages/Home';
+import About from './pages/About';
+import Blog from './pages/Blog';
+
 
 const App = () => {
   return (
@@ -11,7 +14,9 @@ const App = () => {
         render={({ location }) => {
           return (
             <Switch location={location}>
-              <Route path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/blog" component={Blog} />
             </Switch>
           );
         }}
