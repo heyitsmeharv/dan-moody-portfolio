@@ -13,10 +13,8 @@ html {
 body {
   font-family: sans-serif;
   font-weight: 400;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
-
+  padding: 3rem 25rem;
   box-sizing: 3rem;
 }
