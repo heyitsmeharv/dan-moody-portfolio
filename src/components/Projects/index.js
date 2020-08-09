@@ -42,7 +42,7 @@ const Wrapper = styled.div`
   position: relative;
   width: 300px;
   height: 300px;
-  margin: 20px;
+  margin: 0 4em 4em 0;
   :hover {
     cursor: pointer;
     opacity: 1;
@@ -78,7 +78,7 @@ const Overlay = styled.div`
 
 const Text = styled.div`
   color: black;
-  font-size: 3em;
+  font-size: 2em;
 `;
 
 const Projects = () => {

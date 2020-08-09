@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 // components
 import Nav from './Nav';
@@ -8,6 +9,7 @@ import SocialMediaBar from './SocialMediaBar';
 
 const Container = styled.div`
   width: 100%;
+  margin-bottom: 4em;
 `;
 
 const Wrapper = styled.div`
@@ -15,16 +17,31 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Title = styled.div`
-  font-size: 3em;
+const NavButton = styled.button`
+  font-size: 2em;
+  background: none;
+  outline: none!important;
+  border: none;
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
   color: black;
-`
+`;
+
+
+
 
 const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>Dan Moody</Title>
+        <NavButton>
+          <StyledNavLink exact to="/home">Dan Moody</StyledNavLink>
+        </NavButton>
         <Nav/>
         <SocialMediaBar/>
       </Wrapper>

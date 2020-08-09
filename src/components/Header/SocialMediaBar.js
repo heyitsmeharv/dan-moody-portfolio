@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 // icons
 import { StyledFacebookCircle, StyledLinkedinSquare, StyledTwitter, StyledGithub  } from '../../resources/Icons';
@@ -10,7 +9,7 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
-const StyledButton = styled(motion.button)`
+const StyledButton = styled.button`
   background: none;
   outline: none!important;
   border: none;
@@ -31,7 +30,7 @@ const SocialMediaBar = () => {
     <Wrapper>
       {socialMediaButtons.map((button, key) => {
         return (
-        <StyledButton key={key} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <StyledButton key={key}>
           <a target="_blank" href={button.link}>{button.icon}</a> 
         </StyledButton>
         )
