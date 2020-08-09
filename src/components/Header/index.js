@@ -17,7 +17,6 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
   font-size: 3em;
-  font-weight: bold;
   color: black;
 `
 

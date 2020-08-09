@@ -3,34 +3,34 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 // images
-import ArmImg from '../../resources/images/arm_compute_shader_blur.png';
-import BreakOutImg from '../../resources/images/breakoutvk.png';
-import DismazementImg from '../../resources/images/dismazement.png';
-import ZombieImg from '../../resources/images/early_zombie_game_prototype.png';
-import EngardeImg from '../../resources/images/engarde.png';
-import RaidersImg from '../../resources/images/raiders.png';
-import SMRMImg from '../../resources/images/smrm.png';
-import SuperZombieSmashImg from '../../resources/images/super_zombie_smash.png';
-import SVOImg from '../../resources/images/svo.png';
-import WackAWeedImg from '../../resources/images/whack_a_weed.png';
-import TotobImg from '../../resources/images/totob.png';
+import ArmImg from '../../resources/images/project/arm_compute_shader_blur.png';
+import BreakOutImg from '../../resources/images/project/breakoutvk.png';
+import DismazementImg from '../../resources/images/project/dismazement.png';
+import ZombieImg from '../../resources/images/project/early_zombie_game_prototype.png';
+import EngardeImg from '../../resources/images/project/engarde.png';
+import RaidersImg from '../../resources/images/project/raiders.png';
+import SMRMImg from '../../resources/images/project/smrm.png';
+import SuperZombieSmashImg from '../../resources/images/project/super_zombie_smash.png';
+import SVOImg from '../../resources/images/project/svo.png';
+import WackAWeedImg from '../../resources/images/project/whack_a_weed.png';
+import TotobImg from '../../resources/images/project/totob.png';
 
 // animations
 import { Ripple } from '../../resources/animations/Ripple';
 
 
 const projects = [
+  { title: 'SVO', image: SVOImg },
   { title: 'Arm Compute Shader Blur', image: ArmImg },
   { title: 'Breakout Vulkan', image: BreakOutImg },
+  { title: 'Totob', image: TotobImg },
+  { title: 'Wack a Weed', image: WackAWeedImg },
+  { title: 'Raiders', image: RaidersImg },
   { title: 'Dismazement', image: DismazementImg },
   { title: 'Zombie', image: ZombieImg },
   { title: 'EngardeImg', image: EngardeImg },
-  { title: 'Raiders', image: RaidersImg },
   { title: 'SMRM', image: SMRMImg },
   { title: 'Super Zombie Smash', image: SuperZombieSmashImg },
-  { title: 'SVO', image: SVOImg },
-  { title: 'Wack a Weed', image: WackAWeedImg },
-  { title: 'Totob', image: TotobImg },
 ];
 
 const Container = styled(motion.div)`
