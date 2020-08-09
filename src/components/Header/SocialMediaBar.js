@@ -19,13 +19,12 @@ const StyledButton = styled(motion.button)`
   }
 `;
 
-// TODO: add in links to the relevant sites
 const socialMediaButtons = [
-  <StyledFacebookCircle/>,
-  <StyledLinkedinSquare/>,
-  <StyledTwitter/>,
-  <StyledGithub/>,
-]
+  { icon: <StyledFacebookCircle/>, link: 'https://www.facebook.com/rkg.dan/' },
+  { icon: <StyledLinkedinSquare/>, link: 'https://www.linkedin.com/in/dan-moody-700071a8' },
+  { icon: <StyledTwitter/>, link: 'https://www.twitter.com/danmoody_' },
+  { icon: <StyledGithub/>, link: 'https://www.github.com/dangmoody' }
+];
 
 const SocialMediaBar = () => {
   return (
@@ -33,7 +32,7 @@ const SocialMediaBar = () => {
       {socialMediaButtons.map((button, key) => {
         return (
         <StyledButton key={key} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          {button}
+          <a target="_blank" href={button.link}>{button.icon}</a> 
         </StyledButton>
         )
       })}

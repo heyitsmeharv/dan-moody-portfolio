@@ -18,3 +18,9 @@ body {
   padding: 3rem 25rem;
   box-sizing: 3rem;
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem; 
+  }
+}
